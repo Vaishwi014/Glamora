@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px 20px;
+  background-color: rgb(194, 218, 241);
+  z-index: 1000; /* Make sure it's above other content */
+  box-shadow: 0 2px 4px rgba(9, 9, 9, 0.1);
+  height: 50px; /* Adjust the height as needed */
+}
+.left {
+  display: flex;
+  align-items: center;
+}
+.brand-name {
+  font-family: "Dancing Script", cursive;
+  color: rgb(33, 32, 32);
+  font-size: 30px;
+  padding-left: 10px;
+  font-weight: bold;
+}
+.center {
+  display: flex;
+  align-items: center;
+}
+.abc {
+  font-family: "Baskervville SC", serif;
+  text-decoration: none;
+  margin: 0 10px;
+  color: #232323;
+  font-size: 18px;
+  position: relative;
+  transition: color 0.3s, font-size 0.3s; /* Smooth transition for hover effect */
+}
+.abc:hover {
+  color: rgb(173, 86, 86);
+  font-size: 20px;
+  text-decoration: underline;
+}
+.drop {
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease; /* Smooth transition for dropdown */
+}
+
+.drop:hover .dropdown-menu {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+.arrow-down {
+  transition: transform 0.3s ease;
+}
+.drop:hover .arrow-down {
+  transform: rotate(-180deg);
+}
+
+.dropdown-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  color: #000;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.dropdown-menu a {
+  color: #000;
+  padding: 5px 10px;
+  text-decoration: none;
+  transition: background-color 0.3s;
+}
+
+.dropdown-menu a:hover {
+  background-color: #ddd;
+}
+
+.ICON {
+  padding: 10px 10px;
+  transition: transform 0.3s ease; /* Smooth transition for hover effect */
+}
+.ICON:hover {
+  transform: scale(1.2); /* Increase the size by 20% on hover */
+}
+.Bag {
+  padding: 10px 10px;
+  color: rgb(238, 4, 4);
+  transition: transform 0.4s ease; /* Smooth transition for hover effect */
+}
+.Bag:hover {
+  transform: scale(1.2); /* Increase the size by 20% on hover */
+}
+.list {
+  padding: 10px 10px;
+  color: rgb(19, 19, 19);
+}
+
+.profile-container {
+  position: relative;
+}
+
+.profile-dropdown {
+  position: absolute;
+  top: 50px; /* Adjust the top value to position the dropdown correctly */
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 200px;
+  padding: 10px;
+  z-index: 1000; /* Ensure it is above other elements */
+}
+
+.profile-header {
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.login-button {
+  padding: 10px;
+  color: #ff69b4;
+  border: 2px solid transparent;
+  background-color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: border-color 0.3s;
+}
+
+.login-button:hover {
+  border-color: #ff69b4;
+}
+
+.profile-link {
+  display: block;
+  padding: 10px;
+  text-decoration: none;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.profile-link:hover {
+  background-color: #f8f9fa;
+  color: #ff69b4;
+}
+.xyz{
+  color: #1e1e1e;
+  padding: 10px;
+}

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Baskervville+SC&family=Dancing+Script:wght@400..700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+.image-display-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 05px;
+  }
+  .image-display-row {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 05px;
+    margin-bottom: 0px; /* Add gap between rows */
+    background-color: rgb(214, 231, 237);;
+  }
+  
+  .image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image {
+    width: 200px; /* Adjust the width as needed */
+    height: 300px; /* Maintain aspect ratio */
+    object-fit: cover;
+    margin-bottom: 10px;
+    margin-top: 45px;
+    border: 2px solid;
+    transition: box-shadow 0.3s ease;
+  }
+  .image:hover{
+    width: 180px;
+    height: 260px; 
+    box-shadow: 0 4px 8px  rgb(48, 44, 45);; /* Add shadow on hover */
+  }
+  
+  .label {
+    font-size: 25px;
+    font-weight: 450;
+    padding-top: 10px;
+    text-align: center;
+    font-family: "Josefin Sans", sans-serif;
+
+  }
+  
+  /* Adjust margins for images with labels above */
+  .image-container .label {
+    margin-bottom: 10px;
+  }
+  
+  .image-container:nth-child(even) .image {
+    margin-bottom: 0;
+    margin-top: 10px;
+  }  
